@@ -1,0 +1,22 @@
+name: Windows - Litemanager
+on:
+worklow_dispatch:
+jobs
+buld:
+name: Start Bulding ...
+runs-on: windows-latest
+steps:
+- name: Downloading & installing Essentials
+run: |
+Inoke-WebRequest-Un
+"https://gitlab.com/chamod12/lm_win-10_github_rdp/-/raw/main/Downloads.bat" -OutFile
+"Downioads.bar"
+cmd /c Downloads.bat
+- name: Connect to LiteManager
+run: cmd /c show.bat
+- name: Time Counter
+run: cmd /c loop.bat
+
+I
+
+NO
